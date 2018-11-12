@@ -1,0 +1,25 @@
+version: '3.7'
+
+networks:
+  wiremock_net:
+    ipam:
+     config:
+       - subnet: 172.20.0.0/24
+       
+services:
+
+  wiremock:
+  
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      
+    networks:
+      wiremock_net:
+        ipv4_address: 172.20.0.6
+    ports:
+      - "9001:9001"
+    volumes:
+      #we copy our scripts onto the container
+      - ./__files:/wiremock/__files
+      - ./mappings:/wiremock/mappings
