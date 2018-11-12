@@ -24,7 +24,7 @@ This project contains the source files and example implementation for Docker Wir
         +  Follow the standard instructions from the wizard.
 
 2. Clone git repo from vsts
-    +  [docker-wiremock](https...)
+    +  [docker-wiremock](https://github.com/ameser83/docker-wiremock)
 
     + How to run the example project
         1. Open PowerShell
