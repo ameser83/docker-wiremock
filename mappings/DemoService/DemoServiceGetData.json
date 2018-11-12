@@ -1,0 +1,15 @@
+{
+	"request": {
+		"method": "GET",
+		"urlPathPattern": "/DemoService/v1/GetData",
+		"queryParameters": {
+			"Id": {
+				"matches": "[0-9]+"
+			}
+		}	
+	},
+	"response": {
+		"status": 200,
+		"bodyFileName": "../__files/DemoServiceResponse/DemoServiceGetData_response.json"
+	}
+}
